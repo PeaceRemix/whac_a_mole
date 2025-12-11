@@ -22,11 +22,7 @@ WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE(WHAC_A_MOLE_OUTPUT_TABLE table, int 
     //init
     table.HIT = 0;
     table.MISS = 0;
-    table.NOT_HIT_NOT_MISS = 1;
-    //change hard
-    spawn_interval_ticks = 2000 + (adc_value * 3); 
-    stay_time_ticks = 5000 + (adc_value * 5);      
-
+    table.NOT_HIT_NOT_MISS = 1;     
 
     //change 1~9 to 0~8
     int input_idx = -1;
@@ -148,4 +144,5 @@ WHAC_A_MOLE_OUTPUT_TABLE WHAC_A_MOLE_UPDATE_WHO_WIN(WHAC_A_MOLE_OUTPUT_TABLE tab
     }
 
     return table;
+
 }
